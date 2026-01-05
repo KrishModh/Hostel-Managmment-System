@@ -1,0 +1,222 @@
+/* ROOT COLORS SAME THEME */
+:root {
+  --bg: #f8fafc;
+  --card: rgba(255, 255, 255, 0.75);
+  --text: #0f172a;
+  --primary: #6366f1;
+  --border: rgba(0, 0, 0, 0.1);
+}
+
+body.dark {
+  --bg: #0b0e14;
+  --card: rgba(18, 20, 28, 0.75);
+  --text: #e5e7eb;
+  --primary: #8b95ff;
+  --border: rgba(255, 255, 255, 0.1);
+}
+
+.rector-nav {
+  width: 96vw;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 12px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--card);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 6px 24px var(--shadow);
+  border-radius: 0 0 20px 20px;
+}
+
+/* width: 97vw;
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 6px 24px var(--shadow);
+  border-radius: 0 0 20px 20px;
+  padding: 16px 18px;
+  background: var(--card);
+  backdrop-filter: blur(20px);
+} */
+
+/* ---------- BIG TITLE ---------- */
+.rector-title {
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: .5px;
+  margin-bottom: 4px;
+}
+
+/* ---------- DESKTOP: one-line menu ---------- */
+.rector-nav-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Desktop: menu inline */
+.rector-links {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.row-links {
+  display: flex;
+  gap: 16px;
+}
+
+
+/* navbar links */
+.rector-links a,
+.row-links a {
+  padding: 8px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--text);
+  position: relative;
+  transition: .25s;
+}
+
+/* remove ugly hover bubble */
+.rector-links a:hover,
+.row-links a:hover {
+  background: transparent;
+  color: #4f46e5;
+}
+
+/* ✨ premium underline animation */
+.rector-links a::after,
+.row-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(120deg, #6366f1, #8b5cf6);
+  border-radius: 999px;
+  transition: .25s ease-in-out;
+}
+
+/* expand underline on hover */
+.rector-links a:hover::after,
+.row-links a:hover::after {
+  width: 100%;
+}
+
+/* active page highlight */
+.active-nav {
+  color: #4f46e5;
+  font-weight: 700;
+}
+
+.active-nav::after {
+  width: 100%;
+}
+
+
+/* ---------- RIGHT SIDE ---------- */
+.rector-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* theme toggle */
+.theme-toggle {
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  padding: 6px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* profile */
+.profile-circle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--primary);
+  cursor: pointer;
+}
+
+.profile-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* dropdown */
+.profile-menu {
+  position: absolute;
+  right: 15px;
+  top: 105px;
+
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  backdrop-filter: blur(18px);
+
+  padding: 10px 12px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, .3);
+}
+
+.profile-menu p {
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+.profile-menu .logout {
+  color: #ff4d4d;
+}
+
+/* ---------- RESPONSIVE MODE ---------- */
+/* ---------- MOBILE RESPONSIVE ---------- */
+@media (max-width: 850px) {
+
+  /* stack layout */
+  .rector-nav-area {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  /* now links become 2 rows */
+  .rector-links {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .row-links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .rector-right {
+    align-self: flex-end;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .rector-title {
+    text-align: center;
+  }
+
+  .rector-links {
+    width: 100%;
+    align-items: center;
+  }
+
+  .row-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

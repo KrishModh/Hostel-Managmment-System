@@ -1,0 +1,227 @@
+/* ---------- MAIN CONTAINER ---------- */
+.complaint-container {
+  max-width: 1100px;
+  margin: 25px auto;
+  padding: 12px;
+}
+
+/* page heading */
+.complaint-container h2 {
+  margin-bottom: 14px;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+/* ---------- TABS BAR ---------- */
+.tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* tab button */
+.tabs button {
+  padding: 9px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  cursor: pointer;
+  transition: .25s;
+  backdrop-filter: blur(12px);
+}
+
+.tabs button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, .15);
+}
+
+/* active tab */
+.active-tab-btn {
+  background: linear-gradient(120deg, #6366f1, #8b5cf6);
+  /* color: white !important; */
+  border: none !important;
+  box-shadow: 0 10px 30px rgba(99, 102, 241, .35);
+}
+
+select {
+  color: #0f172a !important;
+}
+
+body.dark select {
+  color: #e5e7eb !important;
+}
+
+
+/* ---------- FORM / CARDS ---------- */
+.card {
+  margin-top: 14px;
+  padding: 18px;
+  border-radius: 18px;
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, .18);
+}
+
+/* nicer small text */
+.card small {
+  opacity: .7;
+}
+
+/* ---------- INPUTS ---------- */
+select,
+textarea {
+  width: 98%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  margin-top: 10px;
+
+  /* FIX: NO translucent bg for inputs */
+  background: #ffffff;
+
+  outline: none;
+
+  color: #0f172a;
+}
+
+/* hover */
+select:hover,
+textarea:hover {
+  background: #f9fafb;
+}
+
+/* focus */
+select:focus,
+textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, .25);
+}
+
+textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+/* focus glow */
+select:focus,
+textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, .25);
+}
+
+/* ---------- SUBMIT BTN ---------- */
+.submit-btn {
+  margin-top: 12px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(120deg, #4f46e5, #818cf8);
+  color: white;
+  font-weight: 600;
+  transition: .25s;
+}
+
+.submit-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px rgba(99, 102, 241, .45);
+}
+
+/* ---------- STATUS CHIPS ---------- */
+.status-chip {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+.pending {
+  background: #fff3b0;
+}
+
+.working {
+  background: #d7f1ff;
+}
+
+.completed {
+  background: #c8ffda;
+}
+
+/* ---------- SOLVE BTN ---------- */
+.solve-btn {
+  margin-top: 10px;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: #22c55e;
+  color: white;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.solve-btn:hover {
+  background: #16a34a;
+  transform: translateY(-1px);
+}
+
+/* ---------- DARK MODE TWEAKS ---------- */
+body.dark .card {
+  background: rgba(20, 22, 30, 0.7);
+}
+
+body.dark select,
+body.dark textarea {
+  background: rgba(10, 12, 18, 0.6);
+}
+
+body.dark .pending {
+  background: #6b7280;
+}
+
+body.dark .working {
+  background: #0ea5e9;
+  color: white;
+}
+
+body.dark .completed {
+  background: #10b981;
+  color: white;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 850px) {
+  .card {
+    padding: 14px;
+  }
+
+  .select,
+  textarea {
+    width: 95%;
+  }
+}
+
+@media (max-width: 600px) {
+  .complaint-container h2 {
+    text-align: center;
+  }
+
+  .tabs {
+    justify-content: center;
+  }
+
+  .submit-btn,
+  .solve-btn {
+    width: 100%;
+  }
+
+  .select,
+  textarea {
+    width: 95%;
+  }
+}

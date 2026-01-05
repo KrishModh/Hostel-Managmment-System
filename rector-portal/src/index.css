@@ -1,0 +1,23 @@
+:root {
+  --bg: #f4f6ff;
+  --card: rgba(255,255,255,.75);
+  --text: #0f172a;
+  --primary: #6366f1;
+  --border: rgba(0,0,0,.12);
+  --shadow: rgba(0,0,0,.18);
+}
+
+body.dark {
+  --bg: #020617;
+  --card: rgba(15,17,25,.7);
+  --text: #e5e7eb;
+  --primary: #818cf8;
+  --border: rgba(255,255,255,.15);
+  --shadow: rgba(0,0,0,.65);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: .25s;
+}

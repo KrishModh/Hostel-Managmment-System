@@ -1,0 +1,151 @@
+/* 🔧 DARK MODE FIX – remove cloudy blur + set solid background */
+
+body.dark .leave-card {
+    background: #0f172a;            /* solid dark */
+    border: 1px solid #1f2937;
+    box-shadow: 0 10px 20px rgba(0,0,0,.6);
+    backdrop-filter: none;          /* blur off */
+}
+
+/* tabs buttons */
+
+body.dark .leave-tabs button {
+    background: #111827;
+    border: 1px solid #1f2937;
+    color: #e5e7eb;
+}
+
+body.dark .leave-tabs button.active {
+    background: linear-gradient(120deg,#4f46e5,#7c3aed);
+    color: white;
+    box-shadow: 0 10px 25px rgba(79,70,229,.45);
+}
+
+/* status chips dark colors */
+
+body.dark .yellow { background:#78350f; color:#fde68a; }
+body.dark .green  { background:#064e3b; color:#6ee7b7; }
+body.dark .red    { background:#7f1d1d; color:#fecaca; }
+
+body.dark .days-chip{
+    background:#1e3a8a;
+    color:#c7d2fe;
+}
+
+/* text contrast */
+body.dark .leave-card p,
+body.dark .leave-card h3 {
+    color: #e5e7eb;
+}
+
+
+.leave-wrapper {
+    padding: 20px;
+}
+
+/* Tabs */
+.leave-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.leave-tabs button {
+    padding: 7px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    cursor: pointer;
+    transition: .2s;
+}
+
+.leave-tabs button.active {
+    background: linear-gradient(120deg, #6366f1, #8b5cf6);
+    color: white;
+    border: none;
+    box-shadow: 0 10px 25px rgba(99, 102, 241, .4);
+}
+
+/* cards */
+.leave-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 15px;
+    margin-top: 10px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .08);
+    backdrop-filter: blur(10px);
+}
+
+/* header row */
+.leave-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* status */
+.status-chip {
+    padding: 3px 8px;
+    border-radius: 999px;
+    font-size: 12px;
+}
+
+.yellow {
+    background: #fff3b0;
+}
+
+.green {
+    background: #bbf7d0;
+}
+
+.red {
+    background: #fecaca;
+}
+
+.days-chip {
+    padding: 3px 8px;
+    border-radius: 999px;
+    background: #e0e7ff;
+    font-size: 12px;
+}
+
+/* grid */
+.leave-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 4px;
+    margin-top: 6px;
+}
+
+/* buttons */
+.action-row {
+    margin-top: 8px;
+    display: flex;
+    gap: 6px;
+}
+
+.btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.approve {
+    background: #22c55e;
+}
+
+.reject {
+    background: #ef4444;
+}
+
+/* dark mode */
+body.dark .leave-card {
+    background: rgba(20, 22, 30, .8);
+}
+
+body.dark .leave-tabs button {
+    background: rgba(22, 24, 32, .85);
+}

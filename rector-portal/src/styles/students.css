@@ -1,0 +1,212 @@
+.students-page {
+    max-width: 1100px;
+    margin: auto;
+    padding: 15px;
+}
+
+/* tabs */
+.student-tabs {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.student-tabs button {
+    padding: 7px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.student-tabs button:hover {
+    transform: translateY(-1px);
+}
+
+/* active tab */
+.active-tab {
+    background: linear-gradient(120deg, #6366f1, #8b5cf6);
+    color: white;
+    border: none;
+}
+
+/* card container */
+.student-card-container {
+    margin-top: 8px;
+}
+
+/* individual student card */
+.student-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 14px;
+    margin-bottom: 10px;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
+}
+
+/* button */
+.view-btn {
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: none;
+    background: #4f46e5;
+    color: white;
+    cursor: pointer;
+}
+
+/* dark mode tweaks */
+body.dark .student-card {
+    background: rgba(20, 22, 30, .7);
+}
+
+/* responsive */
+@media(max-width:700px) {
+    .student-card {
+        padding: 12px;
+    }
+
+    .menu-popup {
+        right: 0;
+    }
+}
+
+.student-search {
+    width: 100%;
+    padding: 10px 14px;
+    margin: 10px 0 18px 0;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    outline: none;
+    color: var(--text);
+}
+
+.student-search:focus {
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, .3);
+}
+
+
+/* three dots */
+.three-dot {
+    font-size: 22px;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 50%;
+    transition: .2s;
+    user-select: none;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+}
+
+
+.three-dot:hover {
+    background: rgba(0, 0, 0, 0.08);
+}
+
+body.dark .three-dot:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+/* dots */
+.three-dot{
+  font-size: 20px;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 50%;
+  transition: .2s;
+  user-select: none;
+}
+
+.three-dot:hover{
+  background: rgba(0,0,0,0.08);
+}
+
+body.dark .three-dot:hover{
+  background: rgba(255,255,255,0.12);
+}
+
+
+/* fix position: attach to parent card */
+.student-card{
+  position: relative;
+}
+
+
+/* popup */
+.menu-popup{
+  position: absolute;
+  top: 28px;
+  right: 4px;
+
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 10px 12px;
+  border-radius: 14px;
+
+  min-width: 160px;
+
+  box-shadow: 0 25px 45px rgba(0,0,0,.18);
+
+  backdrop-filter: blur(12px);
+
+  animation: pop .15s ease;
+  z-index: 50;
+}
+
+/* cute arrow */
+.menu-popup::before{
+  content:"";
+  position:absolute;
+  top:-7px;
+  right:12px;
+  width:12px;
+  height:12px;
+  background: inherit;
+  border-left:1px solid var(--border);
+  border-top:1px solid var(--border);
+  transform: rotate(45deg);
+  border-radius: 3px;
+}
+
+@keyframes pop{
+  from{ transform: scale(.9); opacity:.3; }
+  to{ transform: scale(1); opacity:1; }
+}
+
+
+/* popup items */
+.menu-popup p{
+  margin: 6px 0;
+  padding: 6px 6px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.menu-popup p:hover{
+  background: rgba(99,102,241,.12);
+}
+
+/* fix link underline */
+.menu-popup a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-popup a:hover{
+  color: var(--primary);
+}
+
+/* dark mode */
+body.dark .menu-popup{
+  background: rgba(20,22,30,.9);
+}
+body.dark .menu-popup::before{
+  background: rgba(20,22,30,.9);
+}

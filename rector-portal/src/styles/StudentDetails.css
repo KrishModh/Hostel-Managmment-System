@@ -1,0 +1,97 @@
+.details-wrapper {
+    max-width: 1200px;
+    margin: 25px auto;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* LEFT CARD */
+.left-profile-card {
+    width: 280px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .1);
+}
+
+.left-profile-card img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 3px solid #ddd;
+}
+
+.left-profile-card .mini-tags span {
+    display: inline-block;
+    margin: 4px;
+    padding: 5px 10px;
+    border-radius: 999px;
+    background: rgba(99, 102, 241, .12);
+}
+
+/* RIGHT CARD */
+.right-details-card {
+    flex: 1;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .1);
+}
+
+.grid-two {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.assign-room input {
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    margin-right: 8px;
+    margin-top: 6px;
+}
+
+.primary {
+    background: linear-gradient(120deg, #6366f1, #8b5cf6);
+    color: white;
+    border: none;
+    padding: 9px 16px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.action-btns {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.approve {
+    background: #16a34a;
+    border: none;
+    padding: 8px 14px;
+    color: white;
+    border-radius: 10px;
+}
+
+.reject {
+    background: #dc2626;
+    border: none;
+    padding: 8px 14px;
+    color: white;
+    border-radius: 10px;
+}
+
+/* dark mode */
+body.dark .left-profile-card,
+body.dark .right-details-card {
+    background: rgba(20, 22, 30, .85);
+}

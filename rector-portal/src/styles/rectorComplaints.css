@@ -1,0 +1,112 @@
+.rc-wrapper {
+    padding: 22px;
+}
+
+/* Tabs */
+.rc-tabs {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+}
+
+.rc-tabs button {
+    padding: 7px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    cursor: pointer;
+    transition: .2s;
+}
+
+.rc-tabs button.active {
+    background: linear-gradient(120deg, #6366f1, #8b5cf6);
+    color: white;
+    border: none;
+    box-shadow: 0 10px 25px rgba(99, 102, 241, .4);
+}
+
+/* Cards */
+.rc-card {
+    width: 91vw;
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 16px;
+    border-radius: 16px;
+    margin-top: 10px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .08);
+    backdrop-filter: blur(10px);
+}
+
+/* header area */
+.rc-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.rc-chip {
+    background: #eef2ff;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.rc-status {
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+/* status colors */
+.yellow {
+    background: #fff3b0;
+}
+
+.blue {
+    background: #d7f1ff;
+}
+
+.green {
+    background: #c8ffda;
+}
+
+.desc {
+    opacity: .8;
+}
+
+/* info grid */
+.rc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 4px;
+    margin-top: 6px;
+}
+
+/* buttons */
+.btn {
+    margin-top: 8px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.blue {
+    background: #3b82f6;
+}
+
+.green {
+    background: #16a34a;
+}
+
+/* dark mode */
+body.dark .rc-card {
+    background: rgba(20, 22, 30, .8);
+}
+
+body.dark .rc-tabs button {
+    background: rgba(25, 27, 35, .9);
+}

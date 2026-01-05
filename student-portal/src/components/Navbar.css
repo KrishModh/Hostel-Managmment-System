@@ -1,0 +1,247 @@
+/* ---------------- ROOT THEME COLORS ---------------- */
+:root {
+  --bg: #f4f7fb;
+  --card: rgba(255, 255, 255, 0.78);
+  --text: #0f172a;
+  --primary: #6366f1;
+  --border: rgba(0, 0, 0, 0.12);
+  --shadow: rgba(0, 0, 0, 0.15);
+}
+
+body.dark {
+  --bg: #0a0b0f;
+  --card: rgba(18, 18, 22, 0.78);
+  --text: #e5e7eb;
+  --primary: #818cf8;
+  --border: rgba(255, 255, 255, 0.12);
+  --shadow: rgba(0, 0, 0, 0.55);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: .25s;
+}
+
+/* --------------- NAVBAR MAIN --------------- */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 12px 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: var(--card);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 6px 24px var(--shadow);
+  border-radius: 0 0 20px 20px;
+}
+
+/* --------------- LEFT SIDE --------------- */
+.nav-left {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* big title mobile */
+.nav-title {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: .3px;
+}
+
+/* --------------- MENU LINKS --------------- */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 22px;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  position: relative;
+  transition: .25s;
+}
+
+/* animated underline */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0%;
+  bottom: -5px;
+  height: 2px;
+  background: linear-gradient(90deg, #6366f1, #818cf8);
+  border-radius: 10px;
+  transition: .25s;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* --------------- RIGHT SIDE AREA --------------- */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* --------------- THEME BUTTON --------------- */
+.theme-btn {
+  padding: 6px 10px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  transition: .25s;
+}
+
+.theme-btn:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+/* -------- PROFILE AVATAR FIX -------- */
+.profile-img {
+  width: 54px;             /* bigger & clear */
+  height: 54px;
+  border-radius: 50%;
+
+  /* fill completely */
+  object-fit: cover;
+  object-position: center;
+
+  /* remove inner white padding illusion */
+  background: #fff;
+
+  border: 3px solid #6366f1;
+  box-shadow: 0 6px 18px rgba(0,0,0,.15);
+
+  transition: .25s ease-in-out;
+}
+
+.profile-img:hover {
+  transform: scale(1.08);
+}
+
+
+/* --------------- DROPDOWN --------------- */
+.profile-dropdown {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 210px;
+
+  background: var(--card);
+  backdrop-filter: blur(18px);
+  border-radius: 18px;
+  border: 1px solid var(--border);
+
+  box-shadow: 0 25px 40px var(--shadow);
+  padding: 12px 14px;
+
+  animation: popup .18s ease;
+}
+
+@keyframes popup {
+  from {
+    transform: translateY(-8px) scale(.95);
+    opacity: .3;
+  }
+
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.profile-dropdown p {
+  margin: 8px 0;
+  padding: 6px;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.profile-dropdown a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.profile-dropdown p:hover {
+  background: rgba(99, 102, 241, .12);
+  color: var(--primary);
+}
+
+/* logout red */
+.logout {
+  color: #ff4d4d;
+  font-weight: 700;
+}
+
+.logout:hover {
+  background: rgba(255, 77, 77, .15);
+}
+
+/* --------------- OVERLAY CLICK CLOSE --------------- */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: transparent;
+}
+
+/* --------------- RESPONSIVE MODE --------------- */
+
+/* 📱 mobile: title big + menu goes below */
+@media(max-width: 768px){
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    font-size: 22px;
+    margin-bottom: 6px;
+  }
+
+  .nav-menu {
+    order: 2;
+    padding-left: 0;
+  }
+
+  .profile-wrapper {
+    order: 1;
+    align-self: flex-end;
+  }
+}
+
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.profile-wrapper {
+  margin-left: auto;         /* push to right */
+  display: flex;
+  align-items: center;
+}
+
