@@ -1,8 +1,9 @@
+# 🏨 Hostel Management System
 
-A modern and responsive **Hostel Management Web Application** with: -
-Student Portal - Rector/Admin Portal - Authentication System - Leave
-Management - Complaint Management - Mess Menu Controls - Dark / Light
-Theme - Responsive UI - Toast Notifications
+A **modern, secure, and fully responsive Hostel Management Web Application** designed to simplify hostel operations for both **Students** and **Rector/Admin**.
+
+This system provides a smooth digital experience with role-based access, real-time status tracking, and a clean UI focused on usability and performance.
+
 
 ## 🚀 Features
 
@@ -45,8 +46,6 @@ modern UI)
 ------------------------------------------------------------------------
 
 ## 🖼️ Project Screenshots
-
-_Add screenshots of your project here. You can drag & drop images in GitHub README editor and it will auto-generate links._
 
 ### 🔹 Student Portal
 
