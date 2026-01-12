@@ -52,22 +52,22 @@ _Add screenshots of your project here. You can drag & drop images in GitHub READ
 ### 🔹 Student Portal
 
 #### 🏠 Student Dashboard
-![Student Dashboard](image-link-here)
+<img width="2560" height="1440" alt="Screenshot (607)" src="https://github.com/user-attachments/assets/6b6ccda9-d86e-4fa4-8fc0-272e80ec191d" />
 
 #### 👤 Student Profile
-![Student Profile](image-link-here)
+<img width="2560" height="1440" alt="Screenshot (614)" src="https://github.com/user-attachments/assets/db61ab79-f32c-4131-bb57-c3effac928f4" />
 
 #### 📝 Leave Apply Page
-![Leave Apply](image-link-here)
+<img width="2560" height="1440" alt="Screenshot (612)" src="https://github.com/user-attachments/assets/634b29a1-692f-4856-97f1-9eab62f5e7a8" />
 
 #### 📊 Leave Status Page
-![Leave Status](image-link-here)
+<img width="2560" height="1440" alt="Screenshot (613)" src="https://github.com/user-attachments/assets/91cc4712-a63c-4dd5-b1fb-a5194e21b413" />
 
 #### 🛠 Complaint Register Page
-![Complaint Register](image-link-here)
+<img width="2560" height="1440" alt="Screenshot (608)" src="https://github.com/user-attachments/assets/6a684192-f5f2-43d4-bd59-7fb6833a0e96" />
 
 #### 📬 Complaint Status Page
-![Complaint Status](image-link-here)
+|<img width="2560" height="1440" alt="Screenshot (609)" src="https://github.com/user-attachments/assets/fe77ae7c-db94-46c2-8697-210a29521df5" />|<img width="2560" height="1440" alt="Screenshot (610)" src="https://github.com/user-attachments/assets/bce9347b-1772-4f01-8650-008f000f8eff" />|<img width="2560" height="1440" alt="Screenshot (611)" src="https://github.com/user-attachments/assets/d7921e53-164b-46fb-8e1b-173f7a2c0393" />|
 
 #### 🍽 Mess Menu View
 ![Mess Menu](image-link-here)
