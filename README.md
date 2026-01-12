@@ -66,7 +66,7 @@ modern UI)
 
 #### 📬 Complaint Status Page
 
-| | | |
+| Pending | Working | Completed |
 |---|---|---|
 | <img src="https://github.com/user-attachments/assets/fe77ae7c-db94-46c2-8697-210a29521df5" width="100%"> | <img src="https://github.com/user-attachments/assets/bce9347b-1772-4f01-8650-008f000f8eff" width="100%"> | <img src="https://github.com/user-attachments/assets/d7921e53-164b-46fb-8e1b-173f7a2c0393" width="100%"> |
 ---
