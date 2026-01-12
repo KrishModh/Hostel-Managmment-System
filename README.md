@@ -55,11 +55,10 @@ modern UI)
 #### 👤 Student Profile
 <img width="2560" height="1440" alt="Screenshot (614)" src="https://github.com/user-attachments/assets/db61ab79-f32c-4131-bb57-c3effac928f4" />
 
-#### 📝 Leave Apply Page
-<img width="2560" height="1440" alt="Screenshot (612)" src="https://github.com/user-attachments/assets/634b29a1-692f-4856-97f1-9eab62f5e7a8" />
-
-#### 📊 Leave Status Page
-<img width="2560" height="1440" alt="Screenshot (613)" src="https://github.com/user-attachments/assets/91cc4712-a63c-4dd5-b1fb-a5194e21b413" />
+#### 📝 Leave Page
+| 📝 Leave Apply Page | 📊 Leave Status Page |
+|---|---|
+| <img width="2560" height="1440" alt="Screenshot (612)" src="https://github.com/user-attachments/assets/634b29a1-692f-4856-97f1-9eab62f5e7a8" /> | <img width="2560" height="1440" alt="Screenshot (613)" src="https://github.com/user-attachments/assets/91cc4712-a63c-4dd5-b1fb-a5194e21b413" /> |
 
 #### 🛠 Complaint Register Page
 <img width="2560" height="1440" alt="Screenshot (608)" src="https://github.com/user-attachments/assets/6a684192-f5f2-43d4-bd59-7fb6833a0e96" />
