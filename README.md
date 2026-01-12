@@ -76,10 +76,13 @@ _Add screenshots of your project here. You can drag & drop images in GitHub READ
 ### 🔹 Rector / Admin Portal
 
 #### 🏠 Rector Dashboard
-![Rector Dashboard](image-link-here)
+<img width="2560" height="1440" alt="Screenshot (619)" src="https://github.com/user-attachments/assets/d0076191-94fe-4c72-9679-41d553855615" />
 
 #### 🎓 Students Management Page
-![Students Page](image-link-here)
+| | |
+|---|---|
+| <img width="2560" height="1440" alt="Screenshot (620)" src="https://github.com/user-attachments/assets/d949d523-c177-4734-936a-aee1100d6569" /> | <img width="2560" height="1440" alt="Screenshot (622)" src="https://github.com/user-attachments/assets/4c33cf6b-d56e-49f7-842f-51590f4b1d38" /> |
+
 
 #### 📄 Student Full Details Page
 ![Student Details](image-link-here)
