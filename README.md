@@ -67,11 +67,7 @@ _Add screenshots of your project here. You can drag & drop images in GitHub READ
 <img width="2560" height="1440" alt="Screenshot (608)" src="https://github.com/user-attachments/assets/6a684192-f5f2-43d4-bd59-7fb6833a0e96" />
 
 #### 📬 Complaint Status Page
-|<img width="2560" height="1440" alt="Screenshot (609)" src="https://github.com/user-attachments/assets/fe77ae7c-db94-46c2-8697-210a29521df5" />|<img width="2560" height="1440" alt="Screenshot (610)" src="https://github.com/user-attachments/assets/bce9347b-1772-4f01-8650-008f000f8eff" />|<img width="2560" height="1440" alt="Screenshot (611)" src="https://github.com/user-attachments/assets/d7921e53-164b-46fb-8e1b-173f7a2c0393" />|
-
-#### 🍽 Mess Menu View
-![Mess Menu](image-link-here)
-
+| <img width="2560" height="1440" alt="Screenshot (609)" src="https://github.com/user-attachments/assets/fe77ae7c-db94-46c2-8697-210a29521df5" /> | <img width="2560" height="1440" alt="Screenshot (610)" src="https://github.com/user-attachments/assets/bce9347b-1772-4f01-8650-008f000f8eff" /> | <img width="2560" height="1440" alt="Screenshot (611)" src="https://github.com/user-attachments/assets/d7921e53-164b-46fb-8e1b-173f7a2c0393" /> |
 
 ---
 
