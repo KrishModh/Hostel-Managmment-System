@@ -1,4 +1,3 @@
-<img width="2560" height="1440" alt="Screenshot (625)" src="https://github.com/user-attachments/assets/7c5b7916-249a-4189-9fa7-ec95da153b42" /># 🏨 Hostel Management Portal (Student + Rector Panel)
 
 A modern and responsive **Hostel Management Web Application** with: -
 Student Portal - Rector/Admin Portal - Authentication System - Leave
